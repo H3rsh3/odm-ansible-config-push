@@ -1,0 +1,21 @@
+---
+- name: nov_cml
+  hosts: laniosrouters
+  gather_facts: false
+  connection: local
+
+  tasks:
+
+  - name: DEFINE PROVIDER
+    set_fact:
+      provider:
+        host: "{{ inventory_hostname }}"
+        username: "{{ username }}"
+        password: "{{ password }}"
+        auth_pass: "{{ 'auth_pass' }}"
+
+  #- include: tasks/ios-show.yml
+  - include: tasks/ios-int-lan-cfg.yml
+  - include: tasks/ios-int-lan-val.yml
+
+  #- debug: var=outver.stdout_lines
