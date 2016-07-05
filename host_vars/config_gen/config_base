@@ -1,0 +1,14 @@
+---
+ansible_ssh_host: <host_mgmt_ip>
+ansible_ssh_port: 22
+ansible_ssh_user: hersh 
+ansible_ssh_pass: Asdf1234
+lan_interface_1_int: <lan_interface_1_int>
+lan_interface_1_add: <lan_interface_1_add>
+lan_interface_1_mask:  <lan_interface_1_mask>
+lan_interface_2_int: <lan_interface_2_int>
+lan_interface_2_add: <lan_interface_2_add>
+lan_interface_2_mask: <lan_interface_2_mask>
+wan_interface_1_int: <wan_interface_1_int>
+wan_interface_1_add: <wan_interface_1_add>
+wan_interface_1_mask: <wan_interface_1_mask>

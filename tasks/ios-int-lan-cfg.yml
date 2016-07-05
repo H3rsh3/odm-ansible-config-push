@@ -1,0 +1,6 @@
+---
+- name: ios interface configuration
+  #hosts: laniosrouters
+  ios_template: 
+    src: templates/ios-lan-config.j2
+    provider: "{{ provider }}"

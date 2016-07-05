@@ -1,0 +1,26 @@
+---
+## this will set the status of show interface x to  the variable "int_state" then it will check if the the srint "admininstratively" exist in "int_state", if it does ansible will runn the template that will enable the interface.
+##
+
+- name: ios interface validate
+  #hosts: laniosrouters
+  ios_command: 
+    commands:
+      - show interface {{ lan_interface_1_int }} | inc {{ lan_interface_1_int }}
+    provider: "{{ provider }}"
+  register: result
+
+#- debug: var=result.stdout_lines
+#- debug: msg={{ result }}
+##
+##
+## set the ouput of the first commnd, indicated by [0] to the variable "int_state"
+- name: set_state
+  set_fact: int_state="{{ result.stdout[0] }}"
+##
+## run this section only if "administratively" show up in "int_state"
+- name: turn interface up
+  ios_template:
+    src: templates/ios-lan-noshut.j2
+    provider: "{{ provider }}"
+  when: ('administratively' in int_state)

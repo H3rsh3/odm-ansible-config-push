@@ -1,0 +1,9 @@
+---
+- name: RUN 'SHOW'
+  ios_command:
+    commands:
+      - show version
+      - show ip interface brief
+      - show run
+    provider: "{{ provider }}"
+  register: outver

@@ -1,0 +1,7 @@
+host,host_mgmt_ip,lan_interface_1_int,lan_interface_1_add,lan_interface_1_mask,lan_interface_2_int,lan_interface_2_add,lan_interface_2_mask,wan_interface_1_int,wan_interface_1_vlan,wan_interface_1_add,wan_interface_1_mask
+R1,2.2.2.101,FastEthernet2/0,10.123.1.2,255.255.255.0,FastEthernet2/1,10.123.1.2,255.255.255.0,FastEthernet0/0.17,17,192.168.17.1,255.255.255.0
+R2,2.2.2.102,FastEthernet2/0,10.123.2.2,255.255.255.0,FastEthernet2/1,10.123.2.2,255.255.255.0,FastEthernet0/0.27,27,192.168.27.1,255.255.255.0
+R3,2.2.2.103,FastEthernet2/0,10.123.3.2,255.255.255.0,FastEthernet2/1,10.123.3.2,255.255.255.0,FastEthernet0/0.37,37,192.168.37.1,255.255.255.0
+R4,2.2.2.104,FastEthernet2/0,10.123.4.2,255.255.255.0,FastEthernet2/1,10.123.4.2,255.255.255.0,FastEthernet0/0.47,47,192.168.47.1,255.255.255.0
+R5,2.2.2.105,FastEthernet2/0,10.123.5.2,255.255.255.0,FastEthernet2/1,10.123.5.2,255.255.255.0,FastEthernet0/0.57,57,192.168.57.1,255.255.255.0
+R6,2.2.2.106,FastEthernet2/0,10.123.6.2,255.255.255.0,FastEthernet2/1,10.123.6.2,255.255.255.0,FastEthernet0/0.67,67,192.168.67.1,255.255.255.0

@@ -1,0 +1,4 @@
+---
+- name: login to ios
+  ios_template: 
+    src: templates/ios-login.yml

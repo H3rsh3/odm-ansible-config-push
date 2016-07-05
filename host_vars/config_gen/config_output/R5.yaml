@@ -1,0 +1,14 @@
+---
+ansible_ssh_host: 2.2.2.105
+ansible_ssh_port: 22
+ansible_ssh_user: hersh 
+ansible_ssh_pass: Asdf1234
+lan_interface_1_int: FastEthernet2/0
+lan_interface_1_add: 10.123.5.2
+lan_interface_1_mask:  255.255.255.0
+lan_interface_2_int: FastEthernet2/1
+lan_interface_2_add: 10.123.5.2
+lan_interface_2_mask: 255.255.255.0
+wan_interface_1_int: FastEthernet0/0.57
+wan_interface_1_add: 192.168.57.1
+wan_interface_1_mask: 255.255.255.0
